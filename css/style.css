@@ -1,0 +1,1072 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 10;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    span {
+        color: #c89b5c;
+    }
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+.nav {
+    display: flex;
+    gap: 30px;
+    a {
+        font-size: 14px;
+        color: #dddddd;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: #c89b5c;
+    }
+}
+
+
+/* =========================
+   BOTÃO AGENDAR
+========================= */
+
+.btn-agendar {
+    background-color: #c89b5c;
+    color: #111111;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+        background-color: #ffffff;
+    }
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../assets/images/barber.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-subtitle {
+    color: #c89b5c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    max-width: 500px;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTÃO PRINCIPAL
+========================= */
+
+.btn-primary {
+    display: inline-block;
+    background-color: #c89b5c;
+    color: #111111;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+}
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services {
+    padding: 100px 0;
+    background-color: #111111;
+    font-family: Arial, sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-family: Arial, sans-serif;
+}
+
+.section-subtitle {
+    color: #c89b5c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-header > p:last-child {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.service-card {
+    background-color: #181818;
+    border: 1px solid #292929;
+    padding: 35px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #c89b5c;
+}
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #242424;
+    color: #c89b5c;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card > p {
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.service-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #292929;
+}
+
+.service-info span {
+    color: #888888;
+    font-size: 14px;
+}
+
+.service-info strong {
+    color: #c89b5c;
+    font-size: 20px;
+}
+.service-button {
+    display: block;
+    text-align: center;
+
+    margin-top: 25px;
+    padding: 12px 20px;
+
+    border: 1px solid #c89b5c;
+    border-radius: 4px;
+
+    color: #c89b5c;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #c89b5c;
+    color: #111111;
+}
+
+/* =========================
+   PERFIL DO BARBEIRO
+========================= */
+
+.barbers {
+    padding: 100px 0;
+    background-color: #151515;
+}
+
+.barber-profile {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.barber-profile-image {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid #292929;
+}
+
+.barber-profile-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.barber-profile-content {
+    padding: 20px 0;
+}
+
+.barber-label {
+    display: inline-block;
+    color: #c89b5c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.barber-profile-content h3 {
+    font-size: clamp(32px, 4vw, 46px);
+    margin-bottom: 25px;
+}
+
+.barber-description {
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.barber-bio {
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.barber-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.barber-specialties span {
+    padding: 9px 13px;
+    border: 1px solid #393939;
+    border-radius: 3px;
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.barber-profile-content .btn-primary {
+    display: inline-block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #0b0b0b;
+    border-top: 1px solid #292929;
+    padding: 45px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+}
+
+.footer-logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-logo span {
+    color: #c89b5c;
+}
+
+.footer-description {
+    color: #999999;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 10px 0 25px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #c89b5c;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    padding-top: 20px;
+    border-top: 1px solid #292929;
+
+    color: #777777;
+    font-size: 12px;
+}
+
+.footer-credit span {
+    color: #c89b5c;
+}
+
+/* =========================
+   FOOTER RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.gallery {
+    padding: 100px 0;
+    background-color: #111111;
+}
+
+.section-description {
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid #292929;
+    background-color: #1b1b1b;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    color: #ffffff;
+    font-size: 18px;
+    border-left: 3px solid #c89b5c;
+    padding-left: 12px;
+}
+
+/* Responsividade da galeria */
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        padding: 65px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+
+    .gallery-overlay {
+        opacity: 1;
+    }
+}
+
+/* =========================
+   RESPONSIVIDADE GERAL
+========================= */
+
+/* TABLETS E TELAS MENORES */
+@media (max-width: 900px) {
+
+    /* Cabeçalho */
+    .header .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Apresentação inicial */
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Perfil do barbeiro */
+    .barber-profile {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .barber-profile-image {
+        height: 420px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    /* Container */
+    .container {
+        width: 92%;
+    }
+
+    /* Cabeçalho */
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    /* Botão do cabeçalho */
+    .btn-agendar {
+        max-width: 100%;
+    }
+
+    /* Apresentação inicial */
+    .hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 48px);
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Títulos das seções */
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    /* Perfil do barbeiro */
+    .barbers {
+        padding: 65px 0;
+    }
+
+    .barber-profile {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .barber-profile-image {
+        height: 350px;
+    }
+
+    .barber-profile-content {
+        padding: 0;
+    }
+
+    .barber-description {
+        font-size: 17px;
+    }
+
+    .barber-bio {
+        font-size: 14px;
+    }
+
+    .barber-specialties {
+        gap: 8px;
+    }
+
+    /* Galeria */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+
+    /* Footer */
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   CELULARES MUITO PEQUENOS
+========================= */
+
+@media (max-width: 380px) {
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .barber-profile-image {
+        height: 300px;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+}
+
+/* =========================
+   MODAL DE AGENDAMENTO
+========================= */
+
+.booking-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.booking-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.booking-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+
+    padding: 35px;
+    background: #181818;
+    border: 1px solid #383838;
+    border-radius: 8px;
+
+    transform: translateY(15px);
+    transition: transform 0.3s ease;
+}
+
+.booking-modal.active .booking-modal-content {
+    transform: translateY(0);
+}
+
+.booking-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    color: #cccccc;
+    background: transparent;
+    border: none;
+
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.booking-close:hover {
+    color: #c89b5c;
+}
+
+.booking-modal-content .section-subtitle {
+    color: #c89b5c;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.booking-modal-content h2 {
+    color: #ffffff;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.booking-modal-description {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.booking-modal .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    min-width: 0;
+}
+
+.booking-modal .form-group label {
+    color: #dddddd;
+    font-size: 13px;
+}
+
+.booking-modal .form-group input,
+.booking-modal .form-group select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+
+    color: #ffffff;
+    background: #101010;
+    border: 1px solid #383838;
+    border-radius: 4px;
+
+    font: inherit;
+    font-size: 14px;
+    color-scheme: dark;
+}
+
+.booking-modal .form-group input:focus,
+.booking-modal .form-group select:focus {
+    outline: none;
+    border-color: #c89b5c;
+}
+
+.booking-modal .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.booking-submit {
+    width: 100%;
+    padding: 14px;
+
+    color: #111111;
+    background: #c89b5c;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.booking-submit:hover {
+    background: #ddb477;
+}
+
+.booking-notice {
+    margin-top: 14px;
+    color: #888888;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .booking-modal {
+        padding: 12px;
+    }
+
+    .booking-modal-content {
+        padding: 28px 20px;
+        max-height: calc(100vh - 24px);
+    }
+
+    .booking-modal-content h2 {
+        font-size: 24px;
+    }
+
+    .booking-modal .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.contact {
+    padding: 100px 0;
+    background-color: #111111;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.contact-card {
+    padding: 35px 25px;
+    text-align: center;
+
+    background-color: #181818;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #c89b5c;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 22px;
+
+    color: #c89b5c;
+    background-color: #252019;
+    border: 1px solid #494034;
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contact-card p {
+    min-height: 75px;
+    margin-bottom: 20px;
+
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.contact-link {
+    display: inline-block;
+    color: #c89b5c;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #e4bd83;
+}
+
+/* Redes sociais */
+
+.contact-social {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-social h3 {
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.contact-social > p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links a {
+    padding: 11px 22px;
+
+    color: #cccccc;
+    border: 1px solid #393939;
+    border-radius: 4px;
+
+    font-size: 13px;
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #c89b5c;
+    border-color: #c89b5c;
+}
+
+/* Responsividade do contato */
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 65px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .contact-card p {
+        min-height: auto;
+    }
+
+    .contact-social {
+        margin-top: 45px;
+    }
+}
